@@ -1,6 +1,5 @@
 var Busboy = require('busboy');
 var fs = require('fs');
-var os = require('os');
 var path = require('path');
 var utility = require('utility');
 var uploadConfig = require('../config').upload;
@@ -23,8 +22,6 @@ var ueditor = function(static_url){
 	            var total = files.length;
 
 	            files.forEach(function(file) {
-	            	console.log("ext");
-	            	console.log(path.extname(file).toLowerCase().length);
 	            	var ext = path.extname(file).toLowerCase();
 	            	if (ext.length>0 && allowFiletypes.indexOf(ext) >= 0) {
 		              	var temp = {};
