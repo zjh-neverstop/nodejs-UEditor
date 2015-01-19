@@ -1,0 +1,37 @@
+# Build and Release Folders
+#bin/
+#bin-debug/
+#bin-release/
+
+# backup files
+*.bak
+
+#sublime project file
+*.sublime-project
+*.sublime-workspace
+
+# Other files and folders
+.settings/
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+#node ./bin/www; node-debug ./bin/www; nodemon -e js,css,ejs ./bin/www
+
